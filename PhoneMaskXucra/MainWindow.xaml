@@ -1,0 +1,15 @@
+﻿<Window x:Class="PhoneMaskXucra.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PhoneMaskXucra"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="273.171">
+    <Grid>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="161.609,134.34,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox Text="{Binding PhoneNumber,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="32.707,92.886,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203.902" />
+        <Label x:Name="label" Content="{Binding PhoneNumber,Mode=TwoWay}" Margin="57,0,71.178,95.04" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Window>
